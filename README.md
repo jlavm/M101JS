@@ -3,7 +3,7 @@ M101JS
 
 Course Mongodb for node.js developers
 
-<h1>Prerequisites in Mac</h1>
+<h2>Prerequisites in Mac</h2>
 <ul>
 <li>Xcode</li>
 <li>Command Line tools fo Xcode</li>
@@ -12,20 +12,20 @@ Course Mongodb for node.js developers
 <li>Node</li>
 </ul>
 
-<h1>Homebrew  installation</h1>
+<h2>Homebrew  installation</h2>
 
 ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
 
-<h1>Xcode installation</h1>
+<h2>Xcode installation</h2>
 
 https://itunes.apple.com/us/app/xcode/id497799835?mt=12
 
-<h1>Mongodb installation</h1>
+<h2>Mongodb installation</h2>
 brew install mongodb
 
 To enter in your mongo database type mongod to start the server and then in other window or tab type mongo
 
-<h1>Node installation</h1>
+<h2>Node installation</h2>
 
 brew install node
 
