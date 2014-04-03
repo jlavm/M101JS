@@ -5,11 +5,11 @@ Course Mongodb for node.js developers
 
 #Prerequisites in Mac
 
--Xcode
--Command Line tools fo Xcode
--Hombrew
--Mongodb
--Node
+>Xcode
+>Command Line tools fo Xcode
+>Hombrew
+>Mongodb
+>Node
 
 #Homebrew  installation
 
