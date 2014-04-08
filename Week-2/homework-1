@@ -1,5 +1,7 @@
 #Exercise 1
 
+<h2>Mongo shell</h2>
+
 >use weather
 >cursor=db.data.find({"Wind Direction":{$gte:180,$lte:360}});
 > cursor.count()
@@ -19,3 +21,25 @@
 	"Sea Level Pressure" : 267
 }
 Solution: New Mexico
+
+
+<h2>Node Code</h2>
+
+var MongoClient = require('mongodb').MongoClient;
+
+MongoClient.connect('mongodb://localhost:27017/weather', function(err, db) {
+    if(err) throw err;
+ 	console.log("We are connected");
+    var wind_direction_query = { "Wind Direction":{$gte:180,$lte:360}};
+    var temperature_query= {"Temperature":-1}
+
+    db.collection('data').find(wind_direction_query).sort(temperature_query).toArray(function(err, docs) {
+        if(err) throw err;
+        
+		console.dir(docs);
+
+
+        db.close();
+    });
+});
+
