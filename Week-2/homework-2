@@ -1,0 +1,20 @@
+#Exercise 2
+
+
+var MongoClient = require('mongodb').MongoClient;
+
+MongoClient.connect('mongodb://localhost:27017/weather', function(err, db) {
+    if(err) throw err;
+ 	console.log("We are connected");
+    var query = { "State":1};
+    var temperature_query= {"Temperature":-1}
+
+    db.collection('data').find().sort(query).sort(temperature_query).toArray(function(err, docs) {
+        if(err) throw err;
+        
+		console.dir(docs);
+
+
+        db.close();
+    });
+});
