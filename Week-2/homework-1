@@ -1,3 +1,21 @@
 #Exercise 1
 
+>use weather
+>cursor=db.data.find({"Wind Direction":{$gte:180,$lte:360}});
+> cursor.count()
+1412
+>cursor.sort({"Temperature":1});
+{
+	"_id" : ObjectId("5342e8898b304f8f34926577"),
+	"Day" : 24,
+	"Time" : 353,
+	"State" : "New Mexico",
+	"Airport" : "SAF",
+	"Temperature" : 0,
+	"Humidity" : 83,
+	"Wind Speed" : 5,
+	"Wind Direction" : 360,
+	"Station Pressure" : 23.86,
+	"Sea Level Pressure" : 267
+}
 Solution: New Mexico
